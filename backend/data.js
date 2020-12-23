@@ -1,8 +1,25 @@
+import bcrypt from 'bcryptjs'
 const data = {
+    users: [
+        {
+            
+            name: 'Admin',
+            email: 'admin@example',
+            password: bcrypt.hashSync('123456', 8),
+            isAdmin: true
+        },
+        {
+           
+            name: 'dragan',
+            email: 'dragan@example',
+            password: bcrypt.hashSync('123456', 8),
+            isAdmin: false
+        }
+    ],
     products:[
         {
-            _id: '1',
-            name: 'Slim Shirt' ,
+            
+            name: 'Slimd Shirt' ,
             category: 'Shirt',
             brand: 'Nike',
             rating: 4.5,
@@ -10,12 +27,12 @@ const data = {
             countInStock: 19,
             price: 120,
             image: '/images/p1.jpg',
-            description: 'Best price shirt'
+            description: 'Best price shirt',
             
         },
         {
-            _id: '2',
-            name: 'Slim Shirt' ,
+    
+            name: 'Slima Shirt' ,
             category: 'Shirt',
             brand: 'Nike',
             rating: 4.5,
@@ -23,12 +40,12 @@ const data = {
             countInStock: 19,
             price: 120,
             image: '/images/p2.jpg',
-            description: 'Best price shirt'
+            description: 'Best price shirt',
 
         },
         {
-            _id: '3',
-            name: 'Slim Shirt' ,
+            
+            name: 'Slsim Shirt' ,
             category: 'Shirt',
             brand: 'Nike',
             rating: 4.5,
@@ -40,8 +57,8 @@ const data = {
 
         },
         {
-            _id: '4',
-            name: 'Slim Shirt' ,
+           
+            name: 'Slidm Shirt' ,
             category: 'Shirt',
             brand: 'Nike',
             rating: 4.5,
@@ -53,8 +70,8 @@ const data = {
 
         },
         {
-            _id: '5',
-            name: 'Slim Shirt' ,
+           
+            name: 'Slifm Shirt' ,
             category: 'Shirt',
             brand: 'Nike',
             rating: 4.5,
@@ -65,8 +82,8 @@ const data = {
             description: 'Best price shirt'
         },
         {
-            _id: '6',
-            name: 'Slim Shirt' ,
+            
+            name: 'Sflim Shirt' ,
             category: 'Shirt',
             brand: 'Nike',
             rating: 4.5,
